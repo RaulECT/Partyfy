@@ -45,6 +45,9 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Vs1-2B-61F" kind="show" id="JV6-cd-Cg3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xCF-RL-G4y">
                                 <rect key="frame" x="91" y="432" width="192" height="46"/>
@@ -83,6 +86,43 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="XYK-85-wA4">
+            <objects>
+                <viewController id="Vs1-2B-61F" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="x83-Sx-h8z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PartyFy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fQs-58-V2R">
+                                <rect key="frame" x="16" y="177" width="343" height="76"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="64"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make your party awesome!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZb-xJ-fIX">
+                                <rect key="frame" x="16" y="267" width="343" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.30196078430000001" green="0.56862745100000001" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fQs-58-V2R" firstAttribute="top" secondItem="IqL-VS-adS" secondAttribute="top" constant="157" id="LsZ-Rf-Prk"/>
+                            <constraint firstItem="fQs-58-V2R" firstAttribute="leading" secondItem="IqL-VS-adS" secondAttribute="leading" constant="16" id="sJ6-w8-61H"/>
+                            <constraint firstItem="IqL-VS-adS" firstAttribute="trailing" secondItem="eZb-xJ-fIX" secondAttribute="trailing" constant="16" id="tyM-CF-DrO"/>
+                            <constraint firstItem="eZb-xJ-fIX" firstAttribute="top" secondItem="fQs-58-V2R" secondAttribute="bottom" constant="14" id="ucE-nG-SEJ"/>
+                            <constraint firstItem="IqL-VS-adS" firstAttribute="trailing" secondItem="fQs-58-V2R" secondAttribute="trailing" constant="16" id="wMK-sS-vDW"/>
+                            <constraint firstItem="eZb-xJ-fIX" firstAttribute="leading" secondItem="IqL-VS-adS" secondAttribute="leading" constant="16" id="z22-1C-2JO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="IqL-VS-adS"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3KE-2w-ygC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1304.8" y="-250.52473763118442"/>
         </scene>
     </scenes>
 </document>
