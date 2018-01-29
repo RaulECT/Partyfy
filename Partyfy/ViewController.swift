@@ -17,6 +17,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         view.setGradiantBackground(colorOne: Colors.baseColor, colorTwo: Colors.accentColor)
         
         // MARK: Buttons Configuration
@@ -31,6 +32,10 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
 
 
@@ -50,4 +55,6 @@ extension UIView {
         layer.insertSublayer(gradiantLayer, at: 0)
     }
 }
+
+
 

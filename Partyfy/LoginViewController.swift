@@ -11,6 +11,9 @@ import UIKit
 class LoginViewController: UIViewController {
     
     // MARK: UI Elements
+    
+    @IBOutlet weak var navigationBar: UINavigationItem!
+    
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var loginButton: UIButton!
@@ -20,6 +23,29 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         
         // MARK: Config UI Elements
+
+        addBordersToLabels()
+        view.setGradiantBackground(colorOne: Colors.baseColor, colorTwo: Colors.accentColor)
+        configNavigationBar()
+        addBordersToButton()
+        // Do any additional setup after loading the view.
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    // MARK: Actions
+    func configNavigationBar() {
+        
+        self.navigationController!.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController!.navigationBar.shadowImage = UIImage()
+        self.navigationController!.navigationBar.isTranslucent = true
+        self.navigationController!.navigationBar.backgroundColor = UIColor.clear
+    }
+    
+    func addBordersToLabels() {
         let border = CALayer()
         let secondBorder = CALayer()
         let width = CGFloat(0.5)
@@ -36,19 +62,15 @@ class LoginViewController: UIViewController {
         
         self.passwordTextField.layer.addSublayer(secondBorder)
         self.passwordTextField.layer.masksToBounds = true
-        
+    }
+    
+    func addBordersToButton() {
         self.loginButton.layer.borderWidth = 1.0
         self.loginButton.layer.borderColor = Colors.whiteColor.cgColor
-        
-   
-        
-        view.setGradiantBackground(colorOne: Colors.baseColor, colorTwo: Colors.accentColor)
-        // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func backView(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
     
 

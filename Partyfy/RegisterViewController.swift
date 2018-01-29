@@ -11,6 +11,9 @@ import UIKit
 class RegisterViewController: UIViewController {
     
     // MARK: UI Elements
+    
+    @IBOutlet weak var navigationBar: UINavigationItem!
+    
     @IBOutlet weak var registerButton: UIButton!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -43,6 +46,7 @@ class RegisterViewController: UIViewController {
         
         
         view.setGradiantBackground(colorOne: Colors.baseColor, colorTwo: Colors.accentColor)
+        configNavigationBar()
 
         // Do any additional setup after loading the view.
     }
@@ -51,6 +55,20 @@ class RegisterViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func configNavigationBar() {
+
+        self.navigationController!.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController!.navigationBar.shadowImage = UIImage()
+        self.navigationController!.navigationBar.isTranslucent = true
+        self.navigationController!.navigationBar.backgroundColor = UIColor.clear
+    }
+    
+    // MARK: Actions
+    @IBAction func backView(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     
 
     /*
