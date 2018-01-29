@@ -40,7 +40,7 @@ class LoginViewController: UIViewController {
         self.loginButton.layer.borderWidth = 1.0
         self.loginButton.layer.borderColor = Colors.whiteColor.cgColor
         
-        /*self.emailTextField.attributedPlaceholder = NSAttributedString(string:"Enter Title", attributes: [NSAttributedStringKey.foregroundColor: Colors.placeholderColor.cgColor])*/
+   
         
         view.setGradiantBackground(colorOne: Colors.baseColor, colorTwo: Colors.accentColor)
         // Do any additional setup after loading the view.
