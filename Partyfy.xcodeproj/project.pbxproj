@@ -14,6 +14,7 @@
 		0CFD2BD2201BE57600EA71DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CFD2BD0201BE57600EA71DD /* LaunchScreen.storyboard */; };
 		0CFD2BDA201BE5EB00EA71DD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFD2BD9201BE5EB00EA71DD /* Constants.swift */; };
 		0CFD2BDC201BF87700EA71DD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFD2BDB201BF87700EA71DD /* LoginViewController.swift */; };
+		0CFD2BDE201F7D5B00EA71DD /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFD2BDD201F7D5B00EA71DD /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		0CFD2BD3201BE57600EA71DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0CFD2BD9201BE5EB00EA71DD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		0CFD2BDB201BF87700EA71DD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0CFD2BDD201F7D5B00EA71DD /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				0CFD2BC7201BE57600EA71DD /* AppDelegate.swift */,
 				0CFD2BC9201BE57600EA71DD /* ViewController.swift */,
 				0CFD2BD9201BE5EB00EA71DD /* Constants.swift */,
+				0CFD2BDD201F7D5B00EA71DD /* RegisterViewController.swift */,
 				0CFD2BCB201BE57600EA71DD /* Main.storyboard */,
 				0CFD2BDB201BF87700EA71DD /* LoginViewController.swift */,
 				0CFD2BCE201BE57600EA71DD /* Assets.xcassets */,
@@ -143,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CFD2BDC201BF87700EA71DD /* LoginViewController.swift in Sources */,
+				0CFD2BDE201F7D5B00EA71DD /* RegisterViewController.swift in Sources */,
 				0CFD2BCA201BE57600EA71DD /* ViewController.swift in Sources */,
 				0CFD2BC8201BE57600EA71DD /* AppDelegate.swift in Sources */,
 				0CFD2BDA201BE5EB00EA71DD /* Constants.swift in Sources */,
